@@ -42,14 +42,6 @@ spec:
   affinity:
     {{- toYaml . | nindent 4 }}
   {{- end }}
-  {{- with .Values.cluster.nodeSelector }}
-  nodeSelector:
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
-  {{- with .Values.cluster.tolerations }}
-  tolerations:
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
   {{- with .Values.cluster.env }}
   env:
     {{- toYaml . | nindent 4 }}
