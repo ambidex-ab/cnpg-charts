@@ -249,6 +249,12 @@ cluster:
   affinity:
     topologyKey: topology.kubernetes.io/zone
 
+  # -- Node selector for pods.
+  nodeSelector: {}
+
+  # -- Tolerations for pods.
+  tolerations: []
+
   # -- Env follows the Env format to pass environment variables to the pods created in the cluster
   env: []
     # - name: MY_CUSTOM_FLAG
