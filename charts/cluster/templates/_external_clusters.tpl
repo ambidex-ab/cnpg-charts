@@ -31,4 +31,3 @@ externalClusters:
 {{- end }}
 {{- end }}
 {{ end }}
-{{ end }}
